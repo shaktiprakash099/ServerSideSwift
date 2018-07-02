@@ -1,0 +1,3990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"CCurl::CCurl::ProductTarget" /* CCurl */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_229 /* Build configuration list for PBXAggregateTarget "CCurl" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = CCurl;
+			productName = CCurl;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_237 /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_189 /* http_parser.c */; };
+		OBJ_238 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_190 /* utils.c */; };
+		OBJ_245 /* ConnectionProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* ConnectionProperties.swift */; };
+		OBJ_246 /* CouchDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* CouchDBClient.swift */; };
+		OBJ_247 /* CouchDBUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* CouchDBUtils.swift */; };
+		OBJ_248 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Database.swift */; };
+		OBJ_249 /* UsersDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* UsersDatabase.swift */; };
+		OBJ_251 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_252 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
+		OBJ_253 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
+		OBJ_254 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_255 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
+		OBJ_256 /* HeliumLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */; };
+		OBJ_257 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_275 /* HeliumLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* HeliumLogger.swift */; };
+		OBJ_276 /* HeliumStreamLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* HeliumStreamLogger.swift */; };
+		OBJ_278 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_285 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* Package.swift */; };
+		OBJ_291 /* CodableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* CodableRouter.swift */; };
+		OBJ_292 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Error.swift */; };
+		OBJ_293 /* FileResourceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* FileResourceServer.swift */; };
+		OBJ_294 /* HTTPVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* HTTPVersion.swift */; };
+		OBJ_295 /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Headers.swift */; };
+		OBJ_296 /* InternalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* InternalError.swift */; };
+		OBJ_297 /* JSONPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* JSONPError.swift */; };
+		OBJ_298 /* Kitura.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* Kitura.swift */; };
+		OBJ_299 /* LinkParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* LinkParameter.swift */; };
+		OBJ_300 /* MimeTypeAcceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* MimeTypeAcceptor.swift */; };
+		OBJ_301 /* RouteRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* RouteRegex.swift */; };
+		OBJ_302 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Router.swift */; };
+		OBJ_303 /* RouterElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* RouterElement.swift */; };
+		OBJ_304 /* RouterElementWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* RouterElementWalker.swift */; };
+		OBJ_305 /* RouterHTTPVerbs+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* RouterHTTPVerbs+Error.swift */; };
+		OBJ_306 /* RouterHTTPVerbs_generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* RouterHTTPVerbs_generated.swift */; };
+		OBJ_307 /* RouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* RouterHandler.swift */; };
+		OBJ_308 /* RouterMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* RouterMethod.swift */; };
+		OBJ_309 /* RouterMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* RouterMiddleware.swift */; };
+		OBJ_310 /* RouterMiddlewareGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* RouterMiddlewareGenerator.swift */; };
+		OBJ_311 /* RouterMiddlewareWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* RouterMiddlewareWalker.swift */; };
+		OBJ_312 /* RouterParameterWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* RouterParameterWalker.swift */; };
+		OBJ_313 /* RouterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* RouterRequest.swift */; };
+		OBJ_314 /* RouterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* RouterResponse.swift */; };
+		OBJ_315 /* SSLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* SSLConfig.swift */; };
+		OBJ_316 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* Stack.swift */; };
+		OBJ_317 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* String+Extensions.swift */; };
+		OBJ_318 /* TemplatingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* TemplatingError.swift */; };
+		OBJ_319 /* BodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* BodyParser.swift */; };
+		OBJ_320 /* BodyParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* BodyParserProtocol.swift */; };
+		OBJ_321 /* JSONBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* JSONBodyParser.swift */; };
+		OBJ_322 /* MultiPartBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* MultiPartBodyParser.swift */; };
+		OBJ_323 /* ParsedBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* ParsedBody.swift */; };
+		OBJ_324 /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Part.swift */; };
+		OBJ_325 /* RawBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* RawBodyParser.swift */; };
+		OBJ_326 /* TextBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* TextBodyParser.swift */; };
+		OBJ_327 /* URLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* URLEncodedBodyParser.swift */; };
+		OBJ_328 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* ContentType.swift */; };
+		OBJ_329 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* types.swift */; };
+		OBJ_330 /* CacheRelatedHeadersSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* CacheRelatedHeadersSetter.swift */; };
+		OBJ_331 /* CompositeHeadersSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* CompositeHeadersSetter.swift */; };
+		OBJ_332 /* FileServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* FileServer.swift */; };
+		OBJ_333 /* RangeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* RangeHeader.swift */; };
+		OBJ_334 /* ResourcePathHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* ResourcePathHandler.swift */; };
+		OBJ_335 /* ResponseHeadersSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* ResponseHeadersSetter.swift */; };
+		OBJ_336 /* StaticFileServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* StaticFileServer.swift */; };
+		OBJ_338 /* KituraContracts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraContracts::KituraContracts::Product" /* KituraContracts.framework */; };
+		OBJ_339 /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */; };
+		OBJ_340 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
+		OBJ_341 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
+		OBJ_342 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_343 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_344 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
+		OBJ_359 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Package.swift */; };
+		OBJ_365 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_145 /* Package.swift */; };
+		OBJ_371 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_196 /* Package.swift */; };
+		OBJ_376 /* BodyFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* BodyFormat.swift */; };
+		OBJ_377 /* ClosureAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* ClosureAliases.swift */; };
+		OBJ_378 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* Coder.swift */; };
+		OBJ_379 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Extensions.swift */; };
+		OBJ_380 /* QueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* QueryDecoder.swift */; };
+		OBJ_381 /* QueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* QueryEncoder.swift */; };
+		OBJ_382 /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* Contracts.swift */; };
+		OBJ_384 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_391 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* Package.swift */; };
+		OBJ_396 /* BufferList.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_148 /* BufferList.swift */; };
+		OBJ_397 /* ClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* ClientRequest.swift */; };
+		OBJ_398 /* ClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* ClientResponse.swift */; };
+		OBJ_399 /* ConnectionUpgradeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_151 /* ConnectionUpgradeFactory.swift */; };
+		OBJ_400 /* ConnectionUpgrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_152 /* ConnectionUpgrader.swift */; };
+		OBJ_401 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_153 /* Error.swift */; };
+		OBJ_402 /* FastCGI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_155 /* FastCGI.swift */; };
+		OBJ_403 /* FastCGIRecordCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_156 /* FastCGIRecordCreate.swift */; };
+		OBJ_404 /* FastCGIRecordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_157 /* FastCGIRecordParser.swift */; };
+		OBJ_405 /* FastCGIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_158 /* FastCGIServer.swift */; };
+		OBJ_406 /* FastCGIServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_159 /* FastCGIServerRequest.swift */; };
+		OBJ_407 /* FastCGIServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_160 /* FastCGIServerResponse.swift */; };
+		OBJ_408 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_162 /* HTTP.swift */; };
+		OBJ_409 /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_163 /* HTTPServer.swift */; };
+		OBJ_410 /* HTTPServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_164 /* HTTPServerRequest.swift */; };
+		OBJ_411 /* HTTPServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_165 /* HTTPServerResponse.swift */; };
+		OBJ_412 /* IncomingHTTPSocketProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_166 /* IncomingHTTPSocketProcessor.swift */; };
+		OBJ_413 /* KeepAliveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_167 /* KeepAliveState.swift */; };
+		OBJ_414 /* HTTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_169 /* HTTPParser.swift */; };
+		OBJ_415 /* HTTPParserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_170 /* HTTPParserStatus.swift */; };
+		OBJ_416 /* ParseResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_171 /* ParseResults.swift */; };
+		OBJ_417 /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_172 /* URLParser.swift */; };
+		OBJ_418 /* HeadersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_173 /* HeadersContainer.swift */; };
+		OBJ_419 /* IncomingSocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_174 /* IncomingSocketHandler.swift */; };
+		OBJ_420 /* IncomingSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_175 /* IncomingSocketManager.swift */; };
+		OBJ_421 /* IncomingSocketProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_176 /* IncomingSocketProcessor.swift */; };
+		OBJ_422 /* IncomingSocketProcessorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_177 /* IncomingSocketProcessorCreator.swift */; };
+		OBJ_423 /* ListenerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_178 /* ListenerGroup.swift */; };
+		OBJ_424 /* SPIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_179 /* SPIUtils.swift */; };
+		OBJ_425 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_181 /* Server.swift */; };
+		OBJ_426 /* ServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_182 /* ServerDelegate.swift */; };
+		OBJ_427 /* ServerLifecycleListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_183 /* ServerLifecycleListener.swift */; };
+		OBJ_428 /* ServerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_184 /* ServerMonitor.swift */; };
+		OBJ_429 /* ServerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_185 /* ServerState.swift */; };
+		OBJ_430 /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_186 /* ServerRequest.swift */; };
+		OBJ_431 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_187 /* ServerResponse.swift */; };
+		OBJ_433 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
+		OBJ_434 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_435 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_436 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
+		OBJ_446 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* Package.swift */; };
+		OBJ_452 /* KituraStencilTemplateEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* KituraStencilTemplateEngine.swift */; };
+		OBJ_454 /* Stencil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Stencil::Stencil::Product" /* Stencil.framework */; };
+		OBJ_455 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
+		OBJ_456 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_457 /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */; };
+		OBJ_470 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Package.swift */; };
+		OBJ_475 /* TemplateEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* TemplateEngine.swift */; };
+		OBJ_482 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Application.swift */; };
+		OBJ_483 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* main.swift */; };
+		OBJ_484 /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Acronym.swift */; };
+		OBJ_485 /* AcronymPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AcronymPersistence.swift */; };
+		OBJ_486 /* AcronymRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* AcronymRoutes.swift */; };
+		OBJ_487 /* ClientRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ClientRoutes.swift */; };
+		OBJ_489 /* KituraStencil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraStencil::KituraStencil::Product" /* KituraStencil.framework */; };
+		OBJ_490 /* Stencil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Stencil::Stencil::Product" /* Stencil.framework */; };
+		OBJ_491 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
+		OBJ_492 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_493 /* CouchDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-CouchDB::CouchDB::Product" /* CouchDB.framework */; };
+		OBJ_494 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_495 /* HeliumLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */; };
+		OBJ_496 /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura::Kitura::Product" /* Kitura.framework */; };
+		OBJ_497 /* KituraContracts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraContracts::KituraContracts::Product" /* KituraContracts.framework */; };
+		OBJ_498 /* KituraTemplateEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */; };
+		OBJ_499 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
+		OBJ_500 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
+		OBJ_501 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_502 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
+		OBJ_503 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
+		OBJ_524 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_529 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_209 /* Logger.swift */; };
+		OBJ_536 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_210 /* Package.swift */; };
+		OBJ_541 /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PathKit.swift */; };
+		OBJ_543 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_550 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Package.swift */; };
+		OBJ_555 /* SSLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_199 /* SSLService.swift */; };
+		OBJ_557 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_564 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_200 /* Package.swift */; };
+		OBJ_569 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_203 /* Socket.swift */; };
+		OBJ_570 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_204 /* SocketProtocols.swift */; };
+		OBJ_571 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_205 /* SocketUtils.swift */; };
+		OBJ_578 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_206 /* Package.swift */; };
+		OBJ_583 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Case.swift */; };
+		OBJ_584 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Context.swift */; };
+		OBJ_585 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Expectation.swift */; };
+		OBJ_586 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Failure.swift */; };
+		OBJ_587 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Global.swift */; };
+		OBJ_588 /* GlobalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* GlobalContext.swift */; };
+		OBJ_589 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Reporter.swift */; };
+		OBJ_590 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Reporters.swift */; };
+		OBJ_597 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Package.swift */; };
+		OBJ_602 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Context.swift */; };
+		OBJ_603 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Environment.swift */; };
+		OBJ_604 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Errors.swift */; };
+		OBJ_605 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Expression.swift */; };
+		OBJ_606 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Extension.swift */; };
+		OBJ_607 /* FilterTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* FilterTag.swift */; };
+		OBJ_608 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Filters.swift */; };
+		OBJ_609 /* ForTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* ForTag.swift */; };
+		OBJ_610 /* IfTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* IfTag.swift */; };
+		OBJ_611 /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Include.swift */; };
+		OBJ_612 /* Inheritence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Inheritence.swift */; };
+		OBJ_613 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Lexer.swift */; };
+		OBJ_614 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Loader.swift */; };
+		OBJ_615 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Node.swift */; };
+		OBJ_616 /* NowTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* NowTag.swift */; };
+		OBJ_617 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Parser.swift */; };
+		OBJ_618 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Template.swift */; };
+		OBJ_619 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Tokenizer.swift */; };
+		OBJ_620 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Variable.swift */; };
+		OBJ_622 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PathKit::PathKit::Product" /* PathKit.framework */; };
+		OBJ_623 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Spectre::Spectre::Product" /* Spectre.framework */; };
+		OBJ_631 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Package.swift */; };
+		OBJ_636 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* LclJSONSerialization.swift */; };
+		OBJ_637 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* SwiftyJSON.swift */; };
+		OBJ_644 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C7AF0FB20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Stencil::Stencil";
+			remoteInfo = Stencil;
+		};
+		0C7AF0FC20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PathKit::PathKit";
+			remoteInfo = PathKit;
+		};
+		0C7AF0FD20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		0C7AF0FE20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		0C7AF0FF20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PathKit::PathKit";
+			remoteInfo = PathKit;
+		};
+		0C7AF10020EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		0C7AF10120EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine";
+			remoteInfo = KituraTemplateEngine;
+		};
+		0C7AF10220EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		0C7AF10320EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		0C7AF10420EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "KituraStencil::KituraStencil";
+			remoteInfo = KituraStencil;
+		};
+		0C7AF10520EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Stencil::Stencil";
+			remoteInfo = Stencil;
+		};
+		0C7AF10620EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PathKit::PathKit";
+			remoteInfo = PathKit;
+		};
+		0C7AF10720EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Spectre::Spectre";
+			remoteInfo = Spectre;
+		};
+		0C7AF10820EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-CouchDB::CouchDB";
+			remoteInfo = CouchDB;
+		};
+		0C7AF10920EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		0C7AF10A20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::KituraNet";
+			remoteInfo = KituraNet;
+		};
+		0C7AF10B20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SSLService::SSLService";
+			remoteInfo = SSLService;
+		};
+		0C7AF10C20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		0C7AF10D20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		0C7AF10E20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+		0C7AF10F20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SSLService::SSLService";
+			remoteInfo = SSLService;
+		};
+		0C7AF11020EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		0C7AF11120EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+		0C7AF11220EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HeliumLogger::HeliumLogger";
+			remoteInfo = HeliumLogger;
+		};
+		0C7AF11320EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		0C7AF11420EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		0C7AF11520EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HeliumLogger::HeliumLogger";
+			remoteInfo = HeliumLogger;
+		};
+		0C7AF11620EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura::Kitura";
+			remoteInfo = Kitura;
+		};
+		0C7AF11720EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "KituraContracts::KituraContracts";
+			remoteInfo = KituraContracts;
+		};
+		0C7AF11820EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		0C7AF11920EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine";
+			remoteInfo = KituraTemplateEngine;
+		};
+		0C7AF11A20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::KituraNet";
+			remoteInfo = KituraNet;
+		};
+		0C7AF11B20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SSLService::SSLService";
+			remoteInfo = SSLService;
+		};
+		0C7AF11C20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		0C7AF11D20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		0C7AF11E20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+		0C7AF11F20EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "KituraContracts::KituraContracts";
+			remoteInfo = KituraContracts;
+		};
+		0C7AF12020EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine";
+			remoteInfo = KituraTemplateEngine;
+		};
+		0C7AF12120EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::KituraNet";
+			remoteInfo = KituraNet;
+		};
+		0C7AF12220EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SSLService::SSLService";
+			remoteInfo = SSLService;
+		};
+		0C7AF12320EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		0C7AF12420EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
+			remoteInfo = LoggerAPI;
+		};
+		0C7AF12520EA14C70020B72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kitura-net::CHTTPParser";
+			remoteInfo = CHTTPParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HeliumLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kitura-CouchDB::CouchDB::Product" /* CouchDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CouchDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kitura-net::KituraNet::Product" /* KituraNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kitura::Kitura::Product" /* Kitura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kitura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"KituraContracts::KituraContracts::Product" /* KituraContracts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraContracts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"KituraStencil::KituraStencil::Product" /* KituraStencil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraStencil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"KituraWebInterface::KituraWebInterface::Product" /* KituraWebInterface */ = {isa = PBXFileReference; lastKnownFileType = text; path = KituraWebInterface; sourceTree = BUILT_PRODUCTS_DIR; };
+		"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoggerAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		OBJ_100 /* RouterMiddlewareGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMiddlewareGenerator.swift; sourceTree = "<group>"; };
+		OBJ_101 /* RouterMiddlewareWalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMiddlewareWalker.swift; sourceTree = "<group>"; };
+		OBJ_102 /* RouterParameterWalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterParameterWalker.swift; sourceTree = "<group>"; };
+		OBJ_103 /* RouterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterRequest.swift; sourceTree = "<group>"; };
+		OBJ_104 /* RouterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterResponse.swift; sourceTree = "<group>"; };
+		OBJ_105 /* SSLConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConfig.swift; sourceTree = "<group>"; };
+		OBJ_106 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		OBJ_107 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_108 /* TemplatingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatingError.swift; sourceTree = "<group>"; };
+		OBJ_11 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_110 /* BodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParser.swift; sourceTree = "<group>"; };
+		OBJ_111 /* BodyParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParserProtocol.swift; sourceTree = "<group>"; };
+		OBJ_112 /* JSONBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyParser.swift; sourceTree = "<group>"; };
+		OBJ_113 /* MultiPartBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartBodyParser.swift; sourceTree = "<group>"; };
+		OBJ_114 /* ParsedBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedBody.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		OBJ_116 /* RawBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawBodyParser.swift; sourceTree = "<group>"; };
+		OBJ_117 /* TextBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBodyParser.swift; sourceTree = "<group>"; };
+		OBJ_118 /* URLEncodedBodyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedBodyParser.swift; sourceTree = "<group>"; };
+		OBJ_120 /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		OBJ_121 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		OBJ_123 /* CacheRelatedHeadersSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheRelatedHeadersSetter.swift; sourceTree = "<group>"; };
+		OBJ_124 /* CompositeHeadersSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeHeadersSetter.swift; sourceTree = "<group>"; };
+		OBJ_125 /* FileServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServer.swift; sourceTree = "<group>"; };
+		OBJ_126 /* RangeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeHeader.swift; sourceTree = "<group>"; };
+		OBJ_127 /* ResourcePathHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcePathHandler.swift; sourceTree = "<group>"; };
+		OBJ_128 /* ResponseHeadersSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHeadersSetter.swift; sourceTree = "<group>"; };
+		OBJ_129 /* StaticFileServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFileServer.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
+		OBJ_130 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura.git-6522211175291160341/Package.swift"; sourceTree = "<group>"; };
+		OBJ_133 /* BodyFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFormat.swift; sourceTree = "<group>"; };
+		OBJ_134 /* ClosureAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureAliases.swift; sourceTree = "<group>"; };
+		OBJ_136 /* Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
+		OBJ_137 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		OBJ_138 /* QueryDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryDecoder.swift; sourceTree = "<group>"; };
+		OBJ_139 /* QueryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryEncoder.swift; sourceTree = "<group>"; };
+		OBJ_14 /* AcronymPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymPersistence.swift; sourceTree = "<group>"; };
+		OBJ_140 /* Contracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contracts.swift; sourceTree = "<group>"; };
+		OBJ_141 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/KituraContracts.git--3897699854862625585/Package.swift"; sourceTree = "<group>"; };
+		OBJ_144 /* TemplateEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEngine.swift; sourceTree = "<group>"; };
+		OBJ_145 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-TemplateEngine.git--5059963620657797085/Package.swift"; sourceTree = "<group>"; };
+		OBJ_148 /* BufferList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferList.swift; sourceTree = "<group>"; };
+		OBJ_149 /* ClientRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRequest.swift; sourceTree = "<group>"; };
+		OBJ_150 /* ClientResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientResponse.swift; sourceTree = "<group>"; };
+		OBJ_151 /* ConnectionUpgradeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUpgradeFactory.swift; sourceTree = "<group>"; };
+		OBJ_152 /* ConnectionUpgrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUpgrader.swift; sourceTree = "<group>"; };
+		OBJ_153 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_155 /* FastCGI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI.swift; sourceTree = "<group>"; };
+		OBJ_156 /* FastCGIRecordCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIRecordCreate.swift; sourceTree = "<group>"; };
+		OBJ_157 /* FastCGIRecordParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIRecordParser.swift; sourceTree = "<group>"; };
+		OBJ_158 /* FastCGIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIServer.swift; sourceTree = "<group>"; };
+		OBJ_159 /* FastCGIServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIServerRequest.swift; sourceTree = "<group>"; };
+		OBJ_16 /* AcronymRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymRoutes.swift; sourceTree = "<group>"; };
+		OBJ_160 /* FastCGIServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIServerResponse.swift; sourceTree = "<group>"; };
+		OBJ_162 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		OBJ_163 /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
+		OBJ_164 /* HTTPServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServerRequest.swift; sourceTree = "<group>"; };
+		OBJ_165 /* HTTPServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServerResponse.swift; sourceTree = "<group>"; };
+		OBJ_166 /* IncomingHTTPSocketProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingHTTPSocketProcessor.swift; sourceTree = "<group>"; };
+		OBJ_167 /* KeepAliveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveState.swift; sourceTree = "<group>"; };
+		OBJ_169 /* HTTPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParser.swift; sourceTree = "<group>"; };
+		OBJ_17 /* ClientRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRoutes.swift; sourceTree = "<group>"; };
+		OBJ_170 /* HTTPParserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParserStatus.swift; sourceTree = "<group>"; };
+		OBJ_171 /* ParseResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseResults.swift; sourceTree = "<group>"; };
+		OBJ_172 /* URLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		OBJ_173 /* HeadersContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadersContainer.swift; sourceTree = "<group>"; };
+		OBJ_174 /* IncomingSocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketHandler.swift; sourceTree = "<group>"; };
+		OBJ_175 /* IncomingSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketManager.swift; sourceTree = "<group>"; };
+		OBJ_176 /* IncomingSocketProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketProcessor.swift; sourceTree = "<group>"; };
+		OBJ_177 /* IncomingSocketProcessorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketProcessorCreator.swift; sourceTree = "<group>"; };
+		OBJ_178 /* ListenerGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerGroup.swift; sourceTree = "<group>"; };
+		OBJ_179 /* SPIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPIUtils.swift; sourceTree = "<group>"; };
+		OBJ_181 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		OBJ_182 /* ServerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDelegate.swift; sourceTree = "<group>"; };
+		OBJ_183 /* ServerLifecycleListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLifecycleListener.swift; sourceTree = "<group>"; };
+		OBJ_184 /* ServerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMonitor.swift; sourceTree = "<group>"; };
+		OBJ_185 /* ServerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerState.swift; sourceTree = "<group>"; };
+		OBJ_186 /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
+		OBJ_187 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		OBJ_189 /* http_parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_parser.c; sourceTree = "<group>"; };
+		OBJ_19 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = SOURCE_ROOT; };
+		OBJ_190 /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		OBJ_192 /* CHTTPParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTTPParser.h; sourceTree = "<group>"; };
+		OBJ_193 /* http_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = http_parser.h; sourceTree = "<group>"; };
+		OBJ_194 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		OBJ_195 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_196 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-net.git--7410958935072501107/Package.swift"; sourceTree = "<group>"; };
+		OBJ_199 /* SSLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLService.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = SOURCE_ROOT; };
+		OBJ_200 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/BlueSSLService.git--6577639804771281610/Package.swift"; sourceTree = "<group>"; };
+		OBJ_203 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		OBJ_204 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
+		OBJ_205 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
+		OBJ_206 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/BlueSocket.git-3162807777605905816/Package.swift"; sourceTree = "<group>"; };
+		OBJ_209 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		OBJ_210 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/LoggerAPI.git--6449715459278086880/Package.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* KituraStencilTemplateEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraStencilTemplateEngine.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-StencilTemplateEngine.git--2176492381134715142/Package.swift"; sourceTree = "<group>"; };
+		OBJ_27 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Stencil.git-7635584243355970173/Package.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		OBJ_33 /* FilterTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTag.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		OBJ_35 /* ForTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTag.swift; sourceTree = "<group>"; };
+		OBJ_36 /* IfTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfTag.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Include.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Inheritence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inheritence.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Lexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		OBJ_41 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		OBJ_42 /* NowTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTag.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/PathKit.git--1865447967743163058/Package.swift"; sourceTree = "<group>"; };
+		OBJ_49 /* PathKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Spectre.git--7655155069707042687/Package.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		OBJ_54 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		OBJ_56 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		OBJ_57 /* GlobalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContext.swift; sourceTree = "<group>"; };
+		OBJ_58 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
+		OBJ_59 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_62 /* ConnectionProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionProperties.swift; sourceTree = "<group>"; };
+		OBJ_63 /* CouchDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchDBClient.swift; sourceTree = "<group>"; };
+		OBJ_64 /* CouchDBUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchDBUtils.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		OBJ_66 /* UsersDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDatabase.swift; sourceTree = "<group>"; };
+		OBJ_68 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-CouchDB.git--5564966604146993984/Package.swift"; sourceTree = "<group>"; };
+		OBJ_71 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
+		OBJ_72 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/SwiftyJSON.git--6955445084174387031/Package.swift"; sourceTree = "<group>"; };
+		OBJ_76 /* HeliumLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeliumLogger.swift; sourceTree = "<group>"; };
+		OBJ_77 /* HeliumStreamLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeliumStreamLogger.swift; sourceTree = "<group>"; };
+		OBJ_78 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/HeliumLogger.git-2106793442615829935/Package.swift"; sourceTree = "<group>"; };
+		OBJ_81 /* CodableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableRouter.swift; sourceTree = "<group>"; };
+		OBJ_82 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_83 /* FileResourceServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResourceServer.swift; sourceTree = "<group>"; };
+		OBJ_84 /* HTTPVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPVersion.swift; sourceTree = "<group>"; };
+		OBJ_85 /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		OBJ_86 /* InternalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalError.swift; sourceTree = "<group>"; };
+		OBJ_87 /* JSONPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPError.swift; sourceTree = "<group>"; };
+		OBJ_88 /* Kitura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitura.swift; sourceTree = "<group>"; };
+		OBJ_89 /* LinkParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkParameter.swift; sourceTree = "<group>"; };
+		OBJ_90 /* MimeTypeAcceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypeAcceptor.swift; sourceTree = "<group>"; };
+		OBJ_91 /* RouteRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRegex.swift; sourceTree = "<group>"; };
+		OBJ_92 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		OBJ_93 /* RouterElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterElement.swift; sourceTree = "<group>"; };
+		OBJ_94 /* RouterElementWalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterElementWalker.swift; sourceTree = "<group>"; };
+		OBJ_95 /* RouterHTTPVerbs+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouterHTTPVerbs+Error.swift"; sourceTree = "<group>"; };
+		OBJ_96 /* RouterHTTPVerbs_generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHTTPVerbs_generated.swift; sourceTree = "<group>"; };
+		OBJ_97 /* RouterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHandler.swift; sourceTree = "<group>"; };
+		OBJ_98 /* RouterMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMethod.swift; sourceTree = "<group>"; };
+		OBJ_99 /* RouterMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMiddleware.swift; sourceTree = "<group>"; };
+		"PathKit::PathKit::Product" /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SSLService::SSLService::Product" /* SSLService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSLService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Socket::Socket::Product" /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Spectre::Spectre::Product" /* Spectre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Spectre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Stencil::Stencil::Product" /* Stencil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stencil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_251 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_252 /* KituraNet.framework in Frameworks */,
+				OBJ_253 /* SSLService.framework in Frameworks */,
+				OBJ_254 /* Socket.framework in Frameworks */,
+				OBJ_255 /* CHTTPParser.framework in Frameworks */,
+				OBJ_256 /* HeliumLogger.framework in Frameworks */,
+				OBJ_257 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_278 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_338 /* KituraContracts.framework in Frameworks */,
+				OBJ_339 /* KituraTemplateEngine.framework in Frameworks */,
+				OBJ_340 /* KituraNet.framework in Frameworks */,
+				OBJ_341 /* SSLService.framework in Frameworks */,
+				OBJ_342 /* Socket.framework in Frameworks */,
+				OBJ_343 /* LoggerAPI.framework in Frameworks */,
+				OBJ_344 /* CHTTPParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_384 /* LoggerAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_433 /* SSLService.framework in Frameworks */,
+				OBJ_434 /* Socket.framework in Frameworks */,
+				OBJ_435 /* LoggerAPI.framework in Frameworks */,
+				OBJ_436 /* CHTTPParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_454 /* Stencil.framework in Frameworks */,
+				OBJ_455 /* PathKit.framework in Frameworks */,
+				OBJ_456 /* Spectre.framework in Frameworks */,
+				OBJ_457 /* KituraTemplateEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_489 /* KituraStencil.framework in Frameworks */,
+				OBJ_490 /* Stencil.framework in Frameworks */,
+				OBJ_491 /* PathKit.framework in Frameworks */,
+				OBJ_492 /* Spectre.framework in Frameworks */,
+				OBJ_493 /* CouchDB.framework in Frameworks */,
+				OBJ_494 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_495 /* HeliumLogger.framework in Frameworks */,
+				OBJ_496 /* Kitura.framework in Frameworks */,
+				OBJ_497 /* KituraContracts.framework in Frameworks */,
+				OBJ_498 /* KituraTemplateEngine.framework in Frameworks */,
+				OBJ_499 /* KituraNet.framework in Frameworks */,
+				OBJ_500 /* SSLService.framework in Frameworks */,
+				OBJ_501 /* Socket.framework in Frameworks */,
+				OBJ_502 /* LoggerAPI.framework in Frameworks */,
+				OBJ_503 /* CHTTPParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_543 /* Spectre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_557 /* Socket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_622 /* PathKit.framework in Frameworks */,
+				OBJ_623 /* Spectre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_109 /* bodyParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_110 /* BodyParser.swift */,
+				OBJ_111 /* BodyParserProtocol.swift */,
+				OBJ_112 /* JSONBodyParser.swift */,
+				OBJ_113 /* MultiPartBodyParser.swift */,
+				OBJ_114 /* ParsedBody.swift */,
+				OBJ_115 /* Part.swift */,
+				OBJ_116 /* RawBodyParser.swift */,
+				OBJ_117 /* TextBodyParser.swift */,
+				OBJ_118 /* URLEncodedBodyParser.swift */,
+			);
+			path = bodyParser;
+			sourceTree = "<group>";
+		};
+		OBJ_119 /* contentType */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_120 /* ContentType.swift */,
+				OBJ_121 /* types.swift */,
+			);
+			path = contentType;
+			sourceTree = "<group>";
+		};
+		OBJ_12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Acronym.swift */,
+				OBJ_14 /* AcronymPersistence.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_122 /* staticFileServer */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_123 /* CacheRelatedHeadersSetter.swift */,
+				OBJ_124 /* CompositeHeadersSetter.swift */,
+				OBJ_125 /* FileServer.swift */,
+				OBJ_126 /* RangeHeader.swift */,
+				OBJ_127 /* ResourcePathHandler.swift */,
+				OBJ_128 /* ResponseHeadersSetter.swift */,
+				OBJ_129 /* StaticFileServer.swift */,
+			);
+			path = staticFileServer;
+			sourceTree = "<group>";
+		};
+		OBJ_131 /* KituraContracts 0.0.24 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_132 /* KituraContracts */,
+				OBJ_141 /* Package.swift */,
+			);
+			name = "KituraContracts 0.0.24";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_132 /* KituraContracts */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_133 /* BodyFormat.swift */,
+				OBJ_134 /* ClosureAliases.swift */,
+				OBJ_135 /* CodableQuery */,
+				OBJ_140 /* Contracts.swift */,
+			);
+			name = KituraContracts;
+			path = ".build/checkouts/KituraContracts.git--3897699854862625585/Sources/KituraContracts";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_135 /* CodableQuery */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_136 /* Coder.swift */,
+				OBJ_137 /* Extensions.swift */,
+				OBJ_138 /* QueryDecoder.swift */,
+				OBJ_139 /* QueryEncoder.swift */,
+			);
+			path = CodableQuery;
+			sourceTree = "<group>";
+		};
+		OBJ_142 /* Kitura-TemplateEngine 1.7.4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_143 /* KituraTemplateEngine */,
+				OBJ_145 /* Package.swift */,
+			);
+			name = "Kitura-TemplateEngine 1.7.4";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_143 /* KituraTemplateEngine */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_144 /* TemplateEngine.swift */,
+			);
+			name = KituraTemplateEngine;
+			path = ".build/checkouts/Kitura-TemplateEngine.git--5059963620657797085/Sources/KituraTemplateEngine";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_146 /* Kitura-net 2.0.4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_147 /* KituraNet */,
+				OBJ_188 /* CHTTPParser */,
+				OBJ_196 /* Package.swift */,
+			);
+			name = "Kitura-net 2.0.4";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_147 /* KituraNet */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_148 /* BufferList.swift */,
+				OBJ_149 /* ClientRequest.swift */,
+				OBJ_150 /* ClientResponse.swift */,
+				OBJ_151 /* ConnectionUpgradeFactory.swift */,
+				OBJ_152 /* ConnectionUpgrader.swift */,
+				OBJ_153 /* Error.swift */,
+				OBJ_154 /* FastCGI */,
+				OBJ_161 /* HTTP */,
+				OBJ_168 /* HTTPParser */,
+				OBJ_173 /* HeadersContainer.swift */,
+				OBJ_174 /* IncomingSocketHandler.swift */,
+				OBJ_175 /* IncomingSocketManager.swift */,
+				OBJ_176 /* IncomingSocketProcessor.swift */,
+				OBJ_177 /* IncomingSocketProcessorCreator.swift */,
+				OBJ_178 /* ListenerGroup.swift */,
+				OBJ_179 /* SPIUtils.swift */,
+				OBJ_180 /* Server */,
+				OBJ_186 /* ServerRequest.swift */,
+				OBJ_187 /* ServerResponse.swift */,
+			);
+			name = KituraNet;
+			path = ".build/checkouts/Kitura-net.git--7410958935072501107/Sources/KituraNet";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_15 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* AcronymRoutes.swift */,
+				OBJ_17 /* ClientRoutes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		OBJ_154 /* FastCGI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_155 /* FastCGI.swift */,
+				OBJ_156 /* FastCGIRecordCreate.swift */,
+				OBJ_157 /* FastCGIRecordParser.swift */,
+				OBJ_158 /* FastCGIServer.swift */,
+				OBJ_159 /* FastCGIServerRequest.swift */,
+				OBJ_160 /* FastCGIServerResponse.swift */,
+			);
+			path = FastCGI;
+			sourceTree = "<group>";
+		};
+		OBJ_161 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_162 /* HTTP.swift */,
+				OBJ_163 /* HTTPServer.swift */,
+				OBJ_164 /* HTTPServerRequest.swift */,
+				OBJ_165 /* HTTPServerResponse.swift */,
+				OBJ_166 /* IncomingHTTPSocketProcessor.swift */,
+				OBJ_167 /* KeepAliveState.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		OBJ_168 /* HTTPParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_169 /* HTTPParser.swift */,
+				OBJ_170 /* HTTPParserStatus.swift */,
+				OBJ_171 /* ParseResults.swift */,
+				OBJ_172 /* URLParser.swift */,
+			);
+			path = HTTPParser;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_180 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_181 /* Server.swift */,
+				OBJ_182 /* ServerDelegate.swift */,
+				OBJ_183 /* ServerLifecycleListener.swift */,
+				OBJ_184 /* ServerMonitor.swift */,
+				OBJ_185 /* ServerState.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		OBJ_188 /* CHTTPParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_189 /* http_parser.c */,
+				OBJ_190 /* utils.c */,
+				OBJ_191 /* include */,
+			);
+			name = CHTTPParser;
+			path = ".build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_191 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_192 /* CHTTPParser.h */,
+				OBJ_193 /* http_parser.h */,
+				OBJ_194 /* utils.h */,
+				OBJ_195 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_197 /* SSLService 0.12.84 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_198 /* SSLService */,
+				OBJ_200 /* Package.swift */,
+			);
+			name = "SSLService 0.12.84";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_198 /* SSLService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_199 /* SSLService.swift */,
+			);
+			name = SSLService;
+			path = ".build/checkouts/BlueSSLService.git--6577639804771281610/Sources/SSLService";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_201 /* Socket 0.12.94 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_202 /* Socket */,
+				OBJ_206 /* Package.swift */,
+			);
+			name = "Socket 0.12.94";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_202 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_203 /* Socket.swift */,
+				OBJ_204 /* SocketProtocols.swift */,
+				OBJ_205 /* SocketUtils.swift */,
+			);
+			name = Socket;
+			path = ".build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_207 /* LoggerAPI 1.7.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_208 /* LoggerAPI */,
+				OBJ_210 /* Package.swift */,
+			);
+			name = "LoggerAPI 1.7.3";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_208 /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_209 /* Logger.swift */,
+			);
+			name = LoggerAPI;
+			path = ".build/checkouts/LoggerAPI.git--6449715459278086880/Sources/LoggerAPI";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_21 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* KituraStencil 1.8.5 */,
+				OBJ_26 /* Stencil 0.10.1 */,
+				OBJ_47 /* PathKit 0.8.0 */,
+				OBJ_50 /* Spectre 0.7.2 */,
+				OBJ_60 /* Kitura-CouchDB 2.0.2 */,
+				OBJ_69 /* SwiftyJSON 17.0.1 */,
+				OBJ_74 /* HeliumLogger 1.7.1 */,
+				OBJ_79 /* Kitura 2.1.5 */,
+				OBJ_131 /* KituraContracts 0.0.24 */,
+				OBJ_142 /* Kitura-TemplateEngine 1.7.4 */,
+				OBJ_146 /* Kitura-net 2.0.4 */,
+				OBJ_197 /* SSLService 0.12.84 */,
+				OBJ_201 /* Socket 0.12.94 */,
+				OBJ_207 /* LoggerAPI 1.7.3 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"KituraStencil::KituraStencil::Product" /* KituraStencil.framework */,
+				"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */,
+				"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */,
+				"SSLService::SSLService::Product" /* SSLService.framework */,
+				"Spectre::Spectre::Product" /* Spectre.framework */,
+				"KituraWebInterface::KituraWebInterface::Product" /* KituraWebInterface */,
+				"PathKit::PathKit::Product" /* PathKit.framework */,
+				"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */,
+				"Kitura::Kitura::Product" /* Kitura.framework */,
+				"Stencil::Stencil::Product" /* Stencil.framework */,
+				"KituraContracts::KituraContracts::Product" /* KituraContracts.framework */,
+				"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */,
+				"Kitura-CouchDB::CouchDB::Product" /* CouchDB.framework */,
+				"Socket::Socket::Product" /* Socket.framework */,
+				"Kitura-net::KituraNet::Product" /* KituraNet.framework */,
+				"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_22 /* KituraStencil 1.8.5 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* KituraStencil */,
+				OBJ_25 /* Package.swift */,
+			);
+			name = "KituraStencil 1.8.5";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* KituraStencil */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* KituraStencilTemplateEngine.swift */,
+			);
+			name = KituraStencil;
+			path = ".build/checkouts/Kitura-StencilTemplateEngine.git--2176492381134715142/Sources/KituraStencil";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* Stencil 0.10.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* Package.swift */,
+				OBJ_28 /* Context.swift */,
+				OBJ_29 /* Environment.swift */,
+				OBJ_30 /* Errors.swift */,
+				OBJ_31 /* Expression.swift */,
+				OBJ_32 /* Extension.swift */,
+				OBJ_33 /* FilterTag.swift */,
+				OBJ_34 /* Filters.swift */,
+				OBJ_35 /* ForTag.swift */,
+				OBJ_36 /* IfTag.swift */,
+				OBJ_37 /* Include.swift */,
+				OBJ_38 /* Inheritence.swift */,
+				OBJ_39 /* Lexer.swift */,
+				OBJ_40 /* Loader.swift */,
+				OBJ_41 /* Node.swift */,
+				OBJ_42 /* NowTag.swift */,
+				OBJ_43 /* Parser.swift */,
+				OBJ_44 /* Template.swift */,
+				OBJ_45 /* Tokenizer.swift */,
+				OBJ_46 /* Variable.swift */,
+			);
+			name = "Stencil 0.10.1";
+			path = ".build/checkouts/Stencil.git-7635584243355970173/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_47 /* PathKit 0.8.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* Package.swift */,
+				OBJ_49 /* PathKit.swift */,
+			);
+			name = "PathKit 0.8.0";
+			path = ".build/checkouts/PathKit.git--1865447967743163058/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_18 /* Tests */,
+				OBJ_19 /* public */,
+				OBJ_20 /* Views */,
+				OBJ_21 /* Dependencies */,
+				OBJ_211 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_50 /* Spectre 0.7.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_51 /* Package.swift */,
+				OBJ_52 /* Case.swift */,
+				OBJ_53 /* Context.swift */,
+				OBJ_54 /* Expectation.swift */,
+				OBJ_55 /* Failure.swift */,
+				OBJ_56 /* Global.swift */,
+				OBJ_57 /* GlobalContext.swift */,
+				OBJ_58 /* Reporter.swift */,
+				OBJ_59 /* Reporters.swift */,
+			);
+			name = "Spectre 0.7.2";
+			path = ".build/checkouts/Spectre.git--7655155069707042687/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_60 /* Kitura-CouchDB 2.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_61 /* CouchDB */,
+				OBJ_67 /* CouchDBSample */,
+				OBJ_68 /* Package.swift */,
+			);
+			name = "Kitura-CouchDB 2.0.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_61 /* CouchDB */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* ConnectionProperties.swift */,
+				OBJ_63 /* CouchDBClient.swift */,
+				OBJ_64 /* CouchDBUtils.swift */,
+				OBJ_65 /* Database.swift */,
+				OBJ_66 /* UsersDatabase.swift */,
+			);
+			name = CouchDB;
+			path = ".build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDB";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_67 /* CouchDBSample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CouchDBSample;
+			path = ".build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDBSample";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_69 /* SwiftyJSON 17.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_70 /* SwiftyJSON */,
+				OBJ_73 /* Package.swift */,
+			);
+			name = "SwiftyJSON 17.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* KituraWebInterface */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* LclJSONSerialization.swift */,
+				OBJ_72 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			path = ".build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_74 /* HeliumLogger 1.7.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_75 /* HeliumLogger */,
+				OBJ_78 /* Package.swift */,
+			);
+			name = "HeliumLogger 1.7.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_75 /* HeliumLogger */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_76 /* HeliumLogger.swift */,
+				OBJ_77 /* HeliumStreamLogger.swift */,
+			);
+			name = HeliumLogger;
+			path = ".build/checkouts/HeliumLogger.git-2106793442615829935/Sources/HeliumLogger";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_79 /* Kitura 2.1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_80 /* Kitura */,
+				OBJ_130 /* Package.swift */,
+			);
+			name = "Kitura 2.1.5";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* KituraWebInterface */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Application */,
+				OBJ_12 /* Models */,
+				OBJ_15 /* Routes */,
+			);
+			name = KituraWebInterface;
+			path = Sources/KituraWebInterface;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_80 /* Kitura */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_81 /* CodableRouter.swift */,
+				OBJ_82 /* Error.swift */,
+				OBJ_83 /* FileResourceServer.swift */,
+				OBJ_84 /* HTTPVersion.swift */,
+				OBJ_85 /* Headers.swift */,
+				OBJ_86 /* InternalError.swift */,
+				OBJ_87 /* JSONPError.swift */,
+				OBJ_88 /* Kitura.swift */,
+				OBJ_89 /* LinkParameter.swift */,
+				OBJ_90 /* MimeTypeAcceptor.swift */,
+				OBJ_91 /* RouteRegex.swift */,
+				OBJ_92 /* Router.swift */,
+				OBJ_93 /* RouterElement.swift */,
+				OBJ_94 /* RouterElementWalker.swift */,
+				OBJ_95 /* RouterHTTPVerbs+Error.swift */,
+				OBJ_96 /* RouterHTTPVerbs_generated.swift */,
+				OBJ_97 /* RouterHandler.swift */,
+				OBJ_98 /* RouterMethod.swift */,
+				OBJ_99 /* RouterMiddleware.swift */,
+				OBJ_100 /* RouterMiddlewareGenerator.swift */,
+				OBJ_101 /* RouterMiddlewareWalker.swift */,
+				OBJ_102 /* RouterParameterWalker.swift */,
+				OBJ_103 /* RouterRequest.swift */,
+				OBJ_104 /* RouterResponse.swift */,
+				OBJ_105 /* SSLConfig.swift */,
+				OBJ_106 /* Stack.swift */,
+				OBJ_107 /* String+Extensions.swift */,
+				OBJ_108 /* TemplatingError.swift */,
+				OBJ_109 /* bodyParser */,
+				OBJ_119 /* contentType */,
+				OBJ_122 /* staticFileServer */,
+			);
+			name = Kitura;
+			path = ".build/checkouts/Kitura.git-6522211175291160341/Sources/Kitura";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Application.swift */,
+				OBJ_11 /* main.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"HeliumLogger::HeliumLogger" /* HeliumLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_271 /* Build configuration list for PBXNativeTarget "HeliumLogger" */;
+			buildPhases = (
+				OBJ_274 /* Sources */,
+				OBJ_277 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_279 /* PBXTargetDependency */,
+			);
+			name = HeliumLogger;
+			productName = HeliumLogger;
+			productReference = "HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"HeliumLogger::SwiftPMPackageDescription" /* HeliumLoggerPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_281 /* Build configuration list for PBXNativeTarget "HeliumLoggerPackageDescription" */;
+			buildPhases = (
+				OBJ_284 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeliumLoggerPackageDescription;
+			productName = HeliumLoggerPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-CouchDB::CouchDB" /* CouchDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_241 /* Build configuration list for PBXNativeTarget "CouchDB" */;
+			buildPhases = (
+				OBJ_244 /* Sources */,
+				OBJ_250 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_258 /* PBXTargetDependency */,
+				OBJ_260 /* PBXTargetDependency */,
+				OBJ_262 /* PBXTargetDependency */,
+				OBJ_264 /* PBXTargetDependency */,
+				OBJ_266 /* PBXTargetDependency */,
+				OBJ_267 /* PBXTargetDependency */,
+				OBJ_269 /* PBXTargetDependency */,
+			);
+			name = CouchDB;
+			productName = CouchDB;
+			productReference = "Kitura-CouchDB::CouchDB::Product" /* CouchDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-CouchDB::SwiftPMPackageDescription" /* Kitura-CouchDBPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_355 /* Build configuration list for PBXNativeTarget "Kitura-CouchDBPackageDescription" */;
+			buildPhases = (
+				OBJ_358 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kitura-CouchDBPackageDescription";
+			productName = "Kitura-CouchDBPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_471 /* Build configuration list for PBXNativeTarget "KituraTemplateEngine" */;
+			buildPhases = (
+				OBJ_474 /* Sources */,
+				OBJ_476 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraTemplateEngine;
+			productName = KituraTemplateEngine;
+			productReference = "Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-TemplateEngine::SwiftPMPackageDescription" /* Kitura-TemplateEnginePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_361 /* Build configuration list for PBXNativeTarget "Kitura-TemplateEnginePackageDescription" */;
+			buildPhases = (
+				OBJ_364 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kitura-TemplateEnginePackageDescription";
+			productName = "Kitura-TemplateEnginePackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-net::CHTTPParser" /* CHTTPParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_233 /* Build configuration list for PBXNativeTarget "CHTTPParser" */;
+			buildPhases = (
+				OBJ_236 /* Sources */,
+				OBJ_239 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHTTPParser;
+			productName = CHTTPParser;
+			productReference = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-net::KituraNet" /* KituraNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_392 /* Build configuration list for PBXNativeTarget "KituraNet" */;
+			buildPhases = (
+				OBJ_395 /* Sources */,
+				OBJ_432 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_437 /* PBXTargetDependency */,
+				OBJ_438 /* PBXTargetDependency */,
+				OBJ_439 /* PBXTargetDependency */,
+				OBJ_440 /* PBXTargetDependency */,
+			);
+			name = KituraNet;
+			productName = KituraNet;
+			productReference = "Kitura-net::KituraNet::Product" /* KituraNet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura-net::SwiftPMPackageDescription" /* Kitura-netPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_367 /* Build configuration list for PBXNativeTarget "Kitura-netPackageDescription" */;
+			buildPhases = (
+				OBJ_370 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kitura-netPackageDescription";
+			productName = "Kitura-netPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura::Kitura" /* Kitura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_287 /* Build configuration list for PBXNativeTarget "Kitura" */;
+			buildPhases = (
+				OBJ_290 /* Sources */,
+				OBJ_337 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_345 /* PBXTargetDependency */,
+				OBJ_347 /* PBXTargetDependency */,
+				OBJ_349 /* PBXTargetDependency */,
+				OBJ_350 /* PBXTargetDependency */,
+				OBJ_351 /* PBXTargetDependency */,
+				OBJ_352 /* PBXTargetDependency */,
+				OBJ_353 /* PBXTargetDependency */,
+			);
+			name = Kitura;
+			productName = Kitura;
+			productReference = "Kitura::Kitura::Product" /* Kitura.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kitura::SwiftPMPackageDescription" /* KituraPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_442 /* Build configuration list for PBXNativeTarget "KituraPackageDescription" */;
+			buildPhases = (
+				OBJ_445 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraPackageDescription;
+			productName = KituraPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"KituraContracts::KituraContracts" /* KituraContracts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_372 /* Build configuration list for PBXNativeTarget "KituraContracts" */;
+			buildPhases = (
+				OBJ_375 /* Sources */,
+				OBJ_383 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_385 /* PBXTargetDependency */,
+			);
+			name = KituraContracts;
+			productName = KituraContracts;
+			productReference = "KituraContracts::KituraContracts::Product" /* KituraContracts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"KituraContracts::SwiftPMPackageDescription" /* KituraContractsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_387 /* Build configuration list for PBXNativeTarget "KituraContractsPackageDescription" */;
+			buildPhases = (
+				OBJ_390 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraContractsPackageDescription;
+			productName = KituraContractsPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"KituraStencil::KituraStencil" /* KituraStencil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_448 /* Build configuration list for PBXNativeTarget "KituraStencil" */;
+			buildPhases = (
+				OBJ_451 /* Sources */,
+				OBJ_453 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_458 /* PBXTargetDependency */,
+				OBJ_460 /* PBXTargetDependency */,
+				OBJ_462 /* PBXTargetDependency */,
+				OBJ_464 /* PBXTargetDependency */,
+			);
+			name = KituraStencil;
+			productName = KituraStencil;
+			productReference = "KituraStencil::KituraStencil::Product" /* KituraStencil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"KituraStencil::SwiftPMPackageDescription" /* KituraStencilPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_466 /* Build configuration list for PBXNativeTarget "KituraStencilPackageDescription" */;
+			buildPhases = (
+				OBJ_469 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraStencilPackageDescription;
+			productName = KituraStencilPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"KituraWebInterface::KituraWebInterface" /* KituraWebInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_478 /* Build configuration list for PBXNativeTarget "KituraWebInterface" */;
+			buildPhases = (
+				OBJ_481 /* Sources */,
+				OBJ_488 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_504 /* PBXTargetDependency */,
+				OBJ_505 /* PBXTargetDependency */,
+				OBJ_506 /* PBXTargetDependency */,
+				OBJ_507 /* PBXTargetDependency */,
+				OBJ_508 /* PBXTargetDependency */,
+				OBJ_509 /* PBXTargetDependency */,
+				OBJ_510 /* PBXTargetDependency */,
+				OBJ_511 /* PBXTargetDependency */,
+				OBJ_512 /* PBXTargetDependency */,
+				OBJ_513 /* PBXTargetDependency */,
+				OBJ_514 /* PBXTargetDependency */,
+				OBJ_515 /* PBXTargetDependency */,
+				OBJ_516 /* PBXTargetDependency */,
+				OBJ_517 /* PBXTargetDependency */,
+				OBJ_518 /* PBXTargetDependency */,
+			);
+			name = KituraWebInterface;
+			productName = KituraWebInterface;
+			productReference = "KituraWebInterface::KituraWebInterface::Product" /* KituraWebInterface */;
+			productType = "com.apple.product-type.tool";
+		};
+		"KituraWebInterface::SwiftPMPackageDescription" /* KituraWebInterfacePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_520 /* Build configuration list for PBXNativeTarget "KituraWebInterfacePackageDescription" */;
+			buildPhases = (
+				OBJ_523 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraWebInterfacePackageDescription;
+			productName = KituraWebInterfacePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"LoggerAPI::LoggerAPI" /* LoggerAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_525 /* Build configuration list for PBXNativeTarget "LoggerAPI" */;
+			buildPhases = (
+				OBJ_528 /* Sources */,
+				OBJ_530 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerAPI;
+			productName = LoggerAPI;
+			productReference = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_532 /* Build configuration list for PBXNativeTarget "LoggerAPIPackageDescription" */;
+			buildPhases = (
+				OBJ_535 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerAPIPackageDescription;
+			productName = LoggerAPIPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"PathKit::PathKit" /* PathKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_537 /* Build configuration list for PBXNativeTarget "PathKit" */;
+			buildPhases = (
+				OBJ_540 /* Sources */,
+				OBJ_542 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_544 /* PBXTargetDependency */,
+			);
+			name = PathKit;
+			productName = PathKit;
+			productReference = "PathKit::PathKit::Product" /* PathKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PathKit::SwiftPMPackageDescription" /* PathKitPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_546 /* Build configuration list for PBXNativeTarget "PathKitPackageDescription" */;
+			buildPhases = (
+				OBJ_549 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PathKitPackageDescription;
+			productName = PathKitPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SSLService::SSLService" /* SSLService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_551 /* Build configuration list for PBXNativeTarget "SSLService" */;
+			buildPhases = (
+				OBJ_554 /* Sources */,
+				OBJ_556 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_558 /* PBXTargetDependency */,
+			);
+			name = SSLService;
+			productName = SSLService;
+			productReference = "SSLService::SSLService::Product" /* SSLService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SSLService::SwiftPMPackageDescription" /* SSLServicePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_560 /* Build configuration list for PBXNativeTarget "SSLServicePackageDescription" */;
+			buildPhases = (
+				OBJ_563 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSLServicePackageDescription;
+			productName = SSLServicePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Socket::Socket" /* Socket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_565 /* Build configuration list for PBXNativeTarget "Socket" */;
+			buildPhases = (
+				OBJ_568 /* Sources */,
+				OBJ_572 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Socket;
+			productName = Socket;
+			productReference = "Socket::Socket::Product" /* Socket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_574 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */;
+			buildPhases = (
+				OBJ_577 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketPackageDescription;
+			productName = SocketPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Spectre::Spectre" /* Spectre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_579 /* Build configuration list for PBXNativeTarget "Spectre" */;
+			buildPhases = (
+				OBJ_582 /* Sources */,
+				OBJ_591 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spectre;
+			productName = Spectre;
+			productReference = "Spectre::Spectre::Product" /* Spectre.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Spectre::SwiftPMPackageDescription" /* SpectrePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_593 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */;
+			buildPhases = (
+				OBJ_596 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpectrePackageDescription;
+			productName = SpectrePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Stencil::Stencil" /* Stencil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_598 /* Build configuration list for PBXNativeTarget "Stencil" */;
+			buildPhases = (
+				OBJ_601 /* Sources */,
+				OBJ_621 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_624 /* PBXTargetDependency */,
+				OBJ_625 /* PBXTargetDependency */,
+			);
+			name = Stencil;
+			productName = Stencil;
+			productReference = "Stencil::Stencil::Product" /* Stencil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Stencil::SwiftPMPackageDescription" /* StencilPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_627 /* Build configuration list for PBXNativeTarget "StencilPackageDescription" */;
+			buildPhases = (
+				OBJ_630 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StencilPackageDescription;
+			productName = StencilPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_640 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */;
+			buildPhases = (
+				OBJ_643 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSONPackageDescription;
+			productName = SwiftyJSONPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_632 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				OBJ_635 /* Sources */,
+				OBJ_638 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "KituraWebInterface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_211 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"CCurl::CCurl::ProductTarget" /* CCurl */,
+				"Kitura-net::CHTTPParser" /* CHTTPParser */,
+				"Kitura-CouchDB::CouchDB" /* CouchDB */,
+				"HeliumLogger::HeliumLogger" /* HeliumLogger */,
+				"HeliumLogger::SwiftPMPackageDescription" /* HeliumLoggerPackageDescription */,
+				"Kitura::Kitura" /* Kitura */,
+				"Kitura-CouchDB::SwiftPMPackageDescription" /* Kitura-CouchDBPackageDescription */,
+				"Kitura-TemplateEngine::SwiftPMPackageDescription" /* Kitura-TemplateEnginePackageDescription */,
+				"Kitura-net::SwiftPMPackageDescription" /* Kitura-netPackageDescription */,
+				"KituraContracts::KituraContracts" /* KituraContracts */,
+				"KituraContracts::SwiftPMPackageDescription" /* KituraContractsPackageDescription */,
+				"Kitura-net::KituraNet" /* KituraNet */,
+				"Kitura::SwiftPMPackageDescription" /* KituraPackageDescription */,
+				"KituraStencil::KituraStencil" /* KituraStencil */,
+				"KituraStencil::SwiftPMPackageDescription" /* KituraStencilPackageDescription */,
+				"Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */,
+				"KituraWebInterface::KituraWebInterface" /* KituraWebInterface */,
+				"KituraWebInterface::SwiftPMPackageDescription" /* KituraWebInterfacePackageDescription */,
+				"LoggerAPI::LoggerAPI" /* LoggerAPI */,
+				"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */,
+				"PathKit::PathKit" /* PathKit */,
+				"PathKit::SwiftPMPackageDescription" /* PathKitPackageDescription */,
+				"SSLService::SSLService" /* SSLService */,
+				"SSLService::SwiftPMPackageDescription" /* SSLServicePackageDescription */,
+				"Socket::Socket" /* Socket */,
+				"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */,
+				"Spectre::Spectre" /* Spectre */,
+				"Spectre::SwiftPMPackageDescription" /* SpectrePackageDescription */,
+				"Stencil::Stencil" /* Stencil */,
+				"Stencil::SwiftPMPackageDescription" /* StencilPackageDescription */,
+				"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */,
+				"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_237 /* http_parser.c in Sources */,
+				OBJ_238 /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_245 /* ConnectionProperties.swift in Sources */,
+				OBJ_246 /* CouchDBClient.swift in Sources */,
+				OBJ_247 /* CouchDBUtils.swift in Sources */,
+				OBJ_248 /* Database.swift in Sources */,
+				OBJ_249 /* UsersDatabase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_275 /* HeliumLogger.swift in Sources */,
+				OBJ_276 /* HeliumStreamLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_285 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_291 /* CodableRouter.swift in Sources */,
+				OBJ_292 /* Error.swift in Sources */,
+				OBJ_293 /* FileResourceServer.swift in Sources */,
+				OBJ_294 /* HTTPVersion.swift in Sources */,
+				OBJ_295 /* Headers.swift in Sources */,
+				OBJ_296 /* InternalError.swift in Sources */,
+				OBJ_297 /* JSONPError.swift in Sources */,
+				OBJ_298 /* Kitura.swift in Sources */,
+				OBJ_299 /* LinkParameter.swift in Sources */,
+				OBJ_300 /* MimeTypeAcceptor.swift in Sources */,
+				OBJ_301 /* RouteRegex.swift in Sources */,
+				OBJ_302 /* Router.swift in Sources */,
+				OBJ_303 /* RouterElement.swift in Sources */,
+				OBJ_304 /* RouterElementWalker.swift in Sources */,
+				OBJ_305 /* RouterHTTPVerbs+Error.swift in Sources */,
+				OBJ_306 /* RouterHTTPVerbs_generated.swift in Sources */,
+				OBJ_307 /* RouterHandler.swift in Sources */,
+				OBJ_308 /* RouterMethod.swift in Sources */,
+				OBJ_309 /* RouterMiddleware.swift in Sources */,
+				OBJ_310 /* RouterMiddlewareGenerator.swift in Sources */,
+				OBJ_311 /* RouterMiddlewareWalker.swift in Sources */,
+				OBJ_312 /* RouterParameterWalker.swift in Sources */,
+				OBJ_313 /* RouterRequest.swift in Sources */,
+				OBJ_314 /* RouterResponse.swift in Sources */,
+				OBJ_315 /* SSLConfig.swift in Sources */,
+				OBJ_316 /* Stack.swift in Sources */,
+				OBJ_317 /* String+Extensions.swift in Sources */,
+				OBJ_318 /* TemplatingError.swift in Sources */,
+				OBJ_319 /* BodyParser.swift in Sources */,
+				OBJ_320 /* BodyParserProtocol.swift in Sources */,
+				OBJ_321 /* JSONBodyParser.swift in Sources */,
+				OBJ_322 /* MultiPartBodyParser.swift in Sources */,
+				OBJ_323 /* ParsedBody.swift in Sources */,
+				OBJ_324 /* Part.swift in Sources */,
+				OBJ_325 /* RawBodyParser.swift in Sources */,
+				OBJ_326 /* TextBodyParser.swift in Sources */,
+				OBJ_327 /* URLEncodedBodyParser.swift in Sources */,
+				OBJ_328 /* ContentType.swift in Sources */,
+				OBJ_329 /* types.swift in Sources */,
+				OBJ_330 /* CacheRelatedHeadersSetter.swift in Sources */,
+				OBJ_331 /* CompositeHeadersSetter.swift in Sources */,
+				OBJ_332 /* FileServer.swift in Sources */,
+				OBJ_333 /* RangeHeader.swift in Sources */,
+				OBJ_334 /* ResourcePathHandler.swift in Sources */,
+				OBJ_335 /* ResponseHeadersSetter.swift in Sources */,
+				OBJ_336 /* StaticFileServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_359 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_365 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_371 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_376 /* BodyFormat.swift in Sources */,
+				OBJ_377 /* ClosureAliases.swift in Sources */,
+				OBJ_378 /* Coder.swift in Sources */,
+				OBJ_379 /* Extensions.swift in Sources */,
+				OBJ_380 /* QueryDecoder.swift in Sources */,
+				OBJ_381 /* QueryEncoder.swift in Sources */,
+				OBJ_382 /* Contracts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_391 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_396 /* BufferList.swift in Sources */,
+				OBJ_397 /* ClientRequest.swift in Sources */,
+				OBJ_398 /* ClientResponse.swift in Sources */,
+				OBJ_399 /* ConnectionUpgradeFactory.swift in Sources */,
+				OBJ_400 /* ConnectionUpgrader.swift in Sources */,
+				OBJ_401 /* Error.swift in Sources */,
+				OBJ_402 /* FastCGI.swift in Sources */,
+				OBJ_403 /* FastCGIRecordCreate.swift in Sources */,
+				OBJ_404 /* FastCGIRecordParser.swift in Sources */,
+				OBJ_405 /* FastCGIServer.swift in Sources */,
+				OBJ_406 /* FastCGIServerRequest.swift in Sources */,
+				OBJ_407 /* FastCGIServerResponse.swift in Sources */,
+				OBJ_408 /* HTTP.swift in Sources */,
+				OBJ_409 /* HTTPServer.swift in Sources */,
+				OBJ_410 /* HTTPServerRequest.swift in Sources */,
+				OBJ_411 /* HTTPServerResponse.swift in Sources */,
+				OBJ_412 /* IncomingHTTPSocketProcessor.swift in Sources */,
+				OBJ_413 /* KeepAliveState.swift in Sources */,
+				OBJ_414 /* HTTPParser.swift in Sources */,
+				OBJ_415 /* HTTPParserStatus.swift in Sources */,
+				OBJ_416 /* ParseResults.swift in Sources */,
+				OBJ_417 /* URLParser.swift in Sources */,
+				OBJ_418 /* HeadersContainer.swift in Sources */,
+				OBJ_419 /* IncomingSocketHandler.swift in Sources */,
+				OBJ_420 /* IncomingSocketManager.swift in Sources */,
+				OBJ_421 /* IncomingSocketProcessor.swift in Sources */,
+				OBJ_422 /* IncomingSocketProcessorCreator.swift in Sources */,
+				OBJ_423 /* ListenerGroup.swift in Sources */,
+				OBJ_424 /* SPIUtils.swift in Sources */,
+				OBJ_425 /* Server.swift in Sources */,
+				OBJ_426 /* ServerDelegate.swift in Sources */,
+				OBJ_427 /* ServerLifecycleListener.swift in Sources */,
+				OBJ_428 /* ServerMonitor.swift in Sources */,
+				OBJ_429 /* ServerState.swift in Sources */,
+				OBJ_430 /* ServerRequest.swift in Sources */,
+				OBJ_431 /* ServerResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_446 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_452 /* KituraStencilTemplateEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_470 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_475 /* TemplateEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_482 /* Application.swift in Sources */,
+				OBJ_483 /* main.swift in Sources */,
+				OBJ_484 /* Acronym.swift in Sources */,
+				OBJ_485 /* AcronymPersistence.swift in Sources */,
+				OBJ_486 /* AcronymRoutes.swift in Sources */,
+				OBJ_487 /* ClientRoutes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_524 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_529 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_536 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_541 /* PathKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_550 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_555 /* SSLService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_564 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_569 /* Socket.swift in Sources */,
+				OBJ_570 /* SocketProtocols.swift in Sources */,
+				OBJ_571 /* SocketUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_578 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_583 /* Case.swift in Sources */,
+				OBJ_584 /* Context.swift in Sources */,
+				OBJ_585 /* Expectation.swift in Sources */,
+				OBJ_586 /* Failure.swift in Sources */,
+				OBJ_587 /* Global.swift in Sources */,
+				OBJ_588 /* GlobalContext.swift in Sources */,
+				OBJ_589 /* Reporter.swift in Sources */,
+				OBJ_590 /* Reporters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_597 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_602 /* Context.swift in Sources */,
+				OBJ_603 /* Environment.swift in Sources */,
+				OBJ_604 /* Errors.swift in Sources */,
+				OBJ_605 /* Expression.swift in Sources */,
+				OBJ_606 /* Extension.swift in Sources */,
+				OBJ_607 /* FilterTag.swift in Sources */,
+				OBJ_608 /* Filters.swift in Sources */,
+				OBJ_609 /* ForTag.swift in Sources */,
+				OBJ_610 /* IfTag.swift in Sources */,
+				OBJ_611 /* Include.swift in Sources */,
+				OBJ_612 /* Inheritence.swift in Sources */,
+				OBJ_613 /* Lexer.swift in Sources */,
+				OBJ_614 /* Loader.swift in Sources */,
+				OBJ_615 /* Node.swift in Sources */,
+				OBJ_616 /* NowTag.swift in Sources */,
+				OBJ_617 /* Parser.swift in Sources */,
+				OBJ_618 /* Template.swift in Sources */,
+				OBJ_619 /* Tokenizer.swift in Sources */,
+				OBJ_620 /* Variable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_631 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_636 /* LclJSONSerialization.swift in Sources */,
+				OBJ_637 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_644 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 0C7AF10920EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::KituraNet" /* KituraNet */;
+			targetProxy = 0C7AF10A20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SSLService::SSLService" /* SSLService */;
+			targetProxy = 0C7AF10F20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 0C7AF11020EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
+			targetProxy = 0C7AF11120EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HeliumLogger::HeliumLogger" /* HeliumLogger */;
+			targetProxy = 0C7AF11220EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = 0C7AF11320EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = 0C7AF10220EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "KituraContracts::KituraContracts" /* KituraContracts */;
+			targetProxy = 0C7AF11720EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_347 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */;
+			targetProxy = 0C7AF11920EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::KituraNet" /* KituraNet */;
+			targetProxy = 0C7AF11A20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SSLService::SSLService" /* SSLService */;
+			targetProxy = 0C7AF11B20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 0C7AF11C20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = 0C7AF11D20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
+			targetProxy = 0C7AF11E20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = 0C7AF11820EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SSLService::SSLService" /* SSLService */;
+			targetProxy = 0C7AF10B20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 0C7AF10C20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = 0C7AF10D20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
+			targetProxy = 0C7AF10E20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Stencil::Stencil" /* Stencil */;
+			targetProxy = 0C7AF0FB20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PathKit::PathKit" /* PathKit */;
+			targetProxy = 0C7AF0FF20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 0C7AF10020EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */;
+			targetProxy = 0C7AF10120EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "KituraStencil::KituraStencil" /* KituraStencil */;
+			targetProxy = 0C7AF10420EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Stencil::Stencil" /* Stencil */;
+			targetProxy = 0C7AF10520EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PathKit::PathKit" /* PathKit */;
+			targetProxy = 0C7AF10620EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 0C7AF10720EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-CouchDB::CouchDB" /* CouchDB */;
+			targetProxy = 0C7AF10820EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 0C7AF11420EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HeliumLogger::HeliumLogger" /* HeliumLogger */;
+			targetProxy = 0C7AF11520EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura::Kitura" /* Kitura */;
+			targetProxy = 0C7AF11620EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_512 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "KituraContracts::KituraContracts" /* KituraContracts */;
+			targetProxy = 0C7AF11F20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */;
+			targetProxy = 0C7AF12020EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::KituraNet" /* KituraNet */;
+			targetProxy = 0C7AF12120EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SSLService::SSLService" /* SSLService */;
+			targetProxy = 0C7AF12220EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 0C7AF12320EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
+			targetProxy = 0C7AF12420EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
+			targetProxy = 0C7AF12520EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 0C7AF0FD20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 0C7AF10320EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PathKit::PathKit" /* PathKit */;
+			targetProxy = 0C7AF0FC20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+		OBJ_625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Spectre::Spectre" /* Spectre */;
+			targetProxy = 0C7AF0FE20EA14C70020B72F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/CHTTPParser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CHTTPParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CHTTPParser;
+			};
+			name = Debug;
+		};
+		OBJ_235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/CHTTPParser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CHTTPParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CHTTPParser;
+			};
+			name = Release;
+		};
+		OBJ_242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/CouchDB_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CouchDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = CouchDB;
+			};
+			name = Debug;
+		};
+		OBJ_243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/CouchDB_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = CouchDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = CouchDB;
+			};
+			name = Release;
+		};
+		OBJ_272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/HeliumLogger_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HeliumLogger;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = HeliumLogger;
+			};
+			name = Debug;
+		};
+		OBJ_273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/HeliumLogger_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HeliumLogger;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = HeliumLogger;
+			};
+			name = Release;
+		};
+		OBJ_282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Kitura_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Kitura;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Kitura;
+			};
+			name = Debug;
+		};
+		OBJ_289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Kitura_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Kitura;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Kitura;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraContracts_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraContracts;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraContracts;
+			};
+			name = Debug;
+		};
+		OBJ_374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraContracts_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraContracts;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraContracts;
+			};
+			name = Release;
+		};
+		OBJ_388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraNet_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraNet;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraNet;
+			};
+			name = Debug;
+		};
+		OBJ_394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraNet_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraNet;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraNet;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraStencil_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraStencil;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraStencil;
+			};
+			name = Debug;
+		};
+		OBJ_450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraStencil_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraStencil;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraStencil;
+			};
+			name = Release;
+		};
+		OBJ_467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraTemplateEngine_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraTemplateEngine;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraTemplateEngine;
+			};
+			name = Debug;
+		};
+		OBJ_473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraTemplateEngine_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KituraTemplateEngine;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraTemplateEngine;
+			};
+			name = Release;
+		};
+		OBJ_479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraWebInterface_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraWebInterface;
+			};
+			name = Debug;
+		};
+		OBJ_480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
+					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
+					"$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser",
+				);
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/KituraWebInterface_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KituraWebInterface.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = KituraWebInterface;
+			};
+			name = Release;
+		};
+		OBJ_521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/LoggerAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = LoggerAPI;
+			};
+			name = Debug;
+		};
+		OBJ_527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/LoggerAPI_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = LoggerAPI;
+			};
+			name = Release;
+		};
+		OBJ_533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/PathKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PathKit;
+			};
+			name = Debug;
+		};
+		OBJ_539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/PathKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PathKit;
+			};
+			name = Release;
+		};
+		OBJ_547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/SSLService_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SSLService;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SSLService;
+			};
+			name = Debug;
+		};
+		OBJ_553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/SSLService_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SSLService;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SSLService;
+			};
+			name = Release;
+		};
+		OBJ_561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Socket_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Socket;
+			};
+			name = Debug;
+		};
+		OBJ_567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Socket_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Socket;
+			};
+			name = Release;
+		};
+		OBJ_575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Spectre_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Spectre;
+			};
+			name = Debug;
+		};
+		OBJ_581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Spectre_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Spectre;
+			};
+			name = Release;
+		};
+		OBJ_594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Stencil_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Stencil;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Stencil;
+			};
+			name = Debug;
+		};
+		OBJ_600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/Stencil_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Stencil;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Stencil;
+			};
+			name = Release;
+		};
+		OBJ_628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Debug;
+		};
+		OBJ_634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KituraWebInterface.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Release;
+		};
+		OBJ_641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "KituraWebInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_229 /* Build configuration list for PBXAggregateTarget "CCurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_230 /* Debug */,
+				OBJ_231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_233 /* Build configuration list for PBXNativeTarget "CHTTPParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_234 /* Debug */,
+				OBJ_235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_241 /* Build configuration list for PBXNativeTarget "CouchDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_242 /* Debug */,
+				OBJ_243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_271 /* Build configuration list for PBXNativeTarget "HeliumLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_272 /* Debug */,
+				OBJ_273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_281 /* Build configuration list for PBXNativeTarget "HeliumLoggerPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_282 /* Debug */,
+				OBJ_283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_287 /* Build configuration list for PBXNativeTarget "Kitura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_288 /* Debug */,
+				OBJ_289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_355 /* Build configuration list for PBXNativeTarget "Kitura-CouchDBPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_356 /* Debug */,
+				OBJ_357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_361 /* Build configuration list for PBXNativeTarget "Kitura-TemplateEnginePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_362 /* Debug */,
+				OBJ_363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_367 /* Build configuration list for PBXNativeTarget "Kitura-netPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_368 /* Debug */,
+				OBJ_369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_372 /* Build configuration list for PBXNativeTarget "KituraContracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_373 /* Debug */,
+				OBJ_374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_387 /* Build configuration list for PBXNativeTarget "KituraContractsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_388 /* Debug */,
+				OBJ_389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_392 /* Build configuration list for PBXNativeTarget "KituraNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_393 /* Debug */,
+				OBJ_394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_442 /* Build configuration list for PBXNativeTarget "KituraPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_443 /* Debug */,
+				OBJ_444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_448 /* Build configuration list for PBXNativeTarget "KituraStencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_449 /* Debug */,
+				OBJ_450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_466 /* Build configuration list for PBXNativeTarget "KituraStencilPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_467 /* Debug */,
+				OBJ_468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_471 /* Build configuration list for PBXNativeTarget "KituraTemplateEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_472 /* Debug */,
+				OBJ_473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_478 /* Build configuration list for PBXNativeTarget "KituraWebInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_479 /* Debug */,
+				OBJ_480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_520 /* Build configuration list for PBXNativeTarget "KituraWebInterfacePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_521 /* Debug */,
+				OBJ_522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_525 /* Build configuration list for PBXNativeTarget "LoggerAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_526 /* Debug */,
+				OBJ_527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_532 /* Build configuration list for PBXNativeTarget "LoggerAPIPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_533 /* Debug */,
+				OBJ_534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_537 /* Build configuration list for PBXNativeTarget "PathKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_538 /* Debug */,
+				OBJ_539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_546 /* Build configuration list for PBXNativeTarget "PathKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_547 /* Debug */,
+				OBJ_548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_551 /* Build configuration list for PBXNativeTarget "SSLService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_552 /* Debug */,
+				OBJ_553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_560 /* Build configuration list for PBXNativeTarget "SSLServicePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_561 /* Debug */,
+				OBJ_562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_565 /* Build configuration list for PBXNativeTarget "Socket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_566 /* Debug */,
+				OBJ_567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_574 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_575 /* Debug */,
+				OBJ_576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_579 /* Build configuration list for PBXNativeTarget "Spectre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_580 /* Debug */,
+				OBJ_581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_593 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_594 /* Debug */,
+				OBJ_595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_598 /* Build configuration list for PBXNativeTarget "Stencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_599 /* Debug */,
+				OBJ_600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_627 /* Build configuration list for PBXNativeTarget "StencilPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_628 /* Debug */,
+				OBJ_629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_632 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_633 /* Debug */,
+				OBJ_634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_640 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_641 /* Debug */,
+				OBJ_642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

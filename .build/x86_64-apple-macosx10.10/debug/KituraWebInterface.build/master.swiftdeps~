@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "369c31da71ab2366df4e1c8bc85b3813"
+build_time: [1530518097, 357423000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/Sources/KituraWebInterface/Application/Application.swift": [1517909337, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/Sources/KituraWebInterface/Application/main.swift": [1517908928, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/Sources/KituraWebInterface/Models/Acronym.swift": [1517909337, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/Sources/KituraWebInterface/Models/AcronymPersistence.swift": [1517909337, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/Sources/KituraWebInterface/Routes/AcronymRoutes.swift": [1517909337, 0]

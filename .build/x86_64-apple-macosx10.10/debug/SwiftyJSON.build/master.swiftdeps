@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "f2320d190eea1f3ce3d3030ab0ff9d74"
+build_time: [1530518073, 965629000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON/LclJSONSerialization.swift": [1530518070, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON/SwiftyJSON.swift": [1530518070, 0]

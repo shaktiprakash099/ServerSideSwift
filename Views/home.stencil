@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TIL - Kitura</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext">
+  </head>
+  <body>
+  {% include "header.stencil" %}
+  {% include "add.stencil" %}
+  <div class="menu-container">
+    <h2>Existing Acronyms</h2>
+  </div>
+  <div class="menu-add">
+    <div class="menu-add-component">
+      <h3>Short Form</h3>
+    </div>
+    <div class="menu-add-component">
+      <h3>Long Form</h3>
+    </div>
+    <!--1-->
+    <div class="menu-add-component">
+      <h3>Delete Acronym</h3>
+    </div>
+  </div>
+  {% for acronym in acronyms %}
+    <div class="menu-add">
+      <div class="menu-add-component">
+        <h5>{{ acronym.short }}</h5>
+      </div>
+      <div class="menu-add-component">
+        <p>{{ acronym.long }}</p>
+      </div>
+      <!--2-->
+      <div class="menu-add-component">
+        <input id="{{ acronym.id }}" class="button-primary one-line" type="submit" value="Delete" onClick="deleteAcronym(this.id)">
+      </div>
+    </div>
+  {% endfor %}
+  <script type="text/javascript">
+    // 1
+    function deleteAcronym(acronymID) {
+        var xhr = new XMLHttpRequest();
+        // 2
+        xhr.open("delete", "/acronyms/" + acronymID);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                // 3
+                location.reload();
+            }
+        }
+        xhr.send();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "ed4c4228fcd184f717624022b504a3b6"
+build_time: [1530518073, 965831000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket/Socket.swift": [1530518070, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket/SocketProtocols.swift": [1530518070, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket/SocketUtils.swift": [1530518070, 0]

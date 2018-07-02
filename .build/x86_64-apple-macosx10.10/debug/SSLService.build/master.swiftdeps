@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "fb8283264f09beb7f19032b9fdd51fc9"
+build_time: [1530518089, 438184000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/BlueSSLService.git--6577639804771281610/Sources/SSLService/SSLService.swift": [1530518069, 0]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "9ca81dde26ca2b723cf551593ee72049"
+build_time: [1530518469, 835030000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/PathKit.git--1865447967743163058/Sources/PathKit.swift": [1530518465, 0]

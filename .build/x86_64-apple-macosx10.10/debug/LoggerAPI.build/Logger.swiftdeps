@@ -1,0 +1,202 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoggerMessageType"
+- "Logger"
+- "Log"
+provides-nominal:
+- "9LoggerAPI0A11MessageTypeO"
+- "9LoggerAPI0A0P"
+- "9LoggerAPI3LogC"
+provides-member:
+- ["9LoggerAPI0A11MessageTypeO", ""]
+- ["9LoggerAPI0A0P", ""]
+- ["9LoggerAPI3LogC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "Bool"
+- !private "BooleanLiteralType"
+- "CustomStringConvertible"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "Log"
+- "Logger"
+- "LoggerMessageType"
+- "String"
+- !private "StringLiteralType"
+- !private "~="
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "debug"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "entry"]
+- ["s23CustomStringConvertibleP", "error"]
+- ["s23CustomStringConvertibleP", "exit"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "info"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "verbose"]
+- ["s23CustomStringConvertibleP", "warning"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- ["s9EquatableP", "RawValue"]
+- ["s9EquatableP", ""]
+- ["s9EquatableP", "_Default_RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "debug"]
+- ["s9EquatableP", "description"]
+- ["s9EquatableP", "entry"]
+- ["s9EquatableP", "error"]
+- ["s9EquatableP", "exit"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "info"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "rawValue"]
+- ["s9EquatableP", "verbose"]
+- ["s9EquatableP", "warning"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "RawValue"]
+- ["s8HashableP", ""]
+- ["s8HashableP", "_Default_RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "debug"]
+- ["s8HashableP", "description"]
+- ["s8HashableP", "entry"]
+- ["s8HashableP", "error"]
+- ["s8HashableP", "exit"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "info"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "rawValue"]
+- ["s8HashableP", "verbose"]
+- ["s8HashableP", "warning"]
+- ["9LoggerAPI3LogC", "Bool"]
+- ["9LoggerAPI3LogC", "Int"]
+- ["9LoggerAPI3LogC", "Logger"]
+- ["9LoggerAPI3LogC", "LoggerMessageType"]
+- ["9LoggerAPI3LogC", "String"]
+- ["9LoggerAPI3LogC", "debug"]
+- ["9LoggerAPI3LogC", "deinit"]
+- ["9LoggerAPI3LogC", "entry"]
+- ["9LoggerAPI3LogC", "error"]
+- ["9LoggerAPI3LogC", "exit"]
+- ["9LoggerAPI3LogC", "info"]
+- ["9LoggerAPI3LogC", "init"]
+- ["9LoggerAPI3LogC", "isLogging"]
+- ["9LoggerAPI3LogC", "logger"]
+- ["9LoggerAPI3LogC", "verbose"]
+- ["9LoggerAPI3LogC", "warning"]
+- ["9LoggerAPI0A0P", "Bool"]
+- ["9LoggerAPI0A0P", "Int"]
+- ["9LoggerAPI0A0P", "LoggerMessageType"]
+- ["9LoggerAPI0A0P", "String"]
+- ["9LoggerAPI0A0P", "isLogging"]
+- ["9LoggerAPI0A0P", "log"]
+- ["9LoggerAPI0A11MessageTypeO", "RawValue"]
+- ["9LoggerAPI0A11MessageTypeO", "String"]
+- ["9LoggerAPI0A11MessageTypeO", "_Default_RawValue"]
+- ["9LoggerAPI0A11MessageTypeO", "debug"]
+- ["9LoggerAPI0A11MessageTypeO", "deinit"]
+- ["9LoggerAPI0A11MessageTypeO", "description"]
+- ["9LoggerAPI0A11MessageTypeO", "entry"]
+- ["9LoggerAPI0A11MessageTypeO", "error"]
+- ["9LoggerAPI0A11MessageTypeO", "exit"]
+- ["9LoggerAPI0A11MessageTypeO", "hashValue"]
+- ["9LoggerAPI0A11MessageTypeO", "info"]
+- ["9LoggerAPI0A11MessageTypeO", "init"]
+- ["9LoggerAPI0A11MessageTypeO", "rawValue"]
+- ["9LoggerAPI0A11MessageTypeO", "verbose"]
+- ["9LoggerAPI0A11MessageTypeO", "warning"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", ""]
+- ["s16RawRepresentableP", "_Default_RawValue"]
+- ["s16RawRepresentableP", "debug"]
+- ["s16RawRepresentableP", "description"]
+- ["s16RawRepresentableP", "entry"]
+- ["s16RawRepresentableP", "error"]
+- ["s16RawRepresentableP", "exit"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "info"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", "verbose"]
+- ["s16RawRepresentableP", "warning"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "9LoggerAPI3LogC"
+- "9LoggerAPI0A0P"
+- "9LoggerAPI0A11MessageTypeO"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/x86_64-apple-macosx10.10/debug/CHTTPParser.build/module.modulemap"
+interface-hash: "c7675d8425bf08519df622de3e7e8051"

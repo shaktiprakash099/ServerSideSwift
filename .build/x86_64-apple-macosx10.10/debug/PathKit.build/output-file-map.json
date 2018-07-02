@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/x86_64-apple-macosx10.10/debug/PathKit.build/master.swiftdeps"
+  },
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/PathKit.git--1865447967743163058/Sources/PathKit.swift": {
+    "dependencies": "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/x86_64-apple-macosx10.10/debug/PathKit.build/PathKit.d",
+    "object": "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/x86_64-apple-macosx10.10/debug/PathKit.build/PathKit.swift.o",
+    "swiftmodule": "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/x86_64-apple-macosx10.10/debug/PathKit.build/PathKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/x86_64-apple-macosx10.10/debug/PathKit.build/PathKit.swiftdeps"
+  }
+}

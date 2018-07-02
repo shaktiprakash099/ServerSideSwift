@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "8d6b82822a201ec34c28c0185ea17105"
+build_time: [1530518093, 252355000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDB/ConnectionProperties.swift": [1530518071, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDB/CouchDBClient.swift": [1530518071, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDB/CouchDBUtils.swift": [1530518071, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDB/Database.swift": [1530518071, 0]
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-CouchDB.git--5564966604146993984/Sources/CouchDB/UsersDatabase.swift": [1530518071, 0]

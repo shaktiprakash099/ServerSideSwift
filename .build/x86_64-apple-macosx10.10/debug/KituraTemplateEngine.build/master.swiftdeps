@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "778774a1e631a38d2c92a6b1d9add9b2"
+build_time: [1530518080, 938500000]
+inputs:
+  "/Users/GLB-312/Desktop/KituraWebInterface_Starter/.build/checkouts/Kitura-TemplateEngine.git--5059963620657797085/Sources/KituraTemplateEngine/TemplateEngine.swift": [1530518071, 0]
